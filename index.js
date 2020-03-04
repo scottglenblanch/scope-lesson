@@ -1,6 +1,6 @@
 const punctuation = '!';
 
-function startEverything() {
+(function startEverything() {
   function getGreetingFunction(greeting) {
     function nameFirstFunction() {
       alert(greeting + ' ' + name + punctuation);
@@ -39,33 +39,4 @@ function startEverything() {
     .addEventListener(
       "click", sayHelloInManyLanguages
     );
-}
-
-startEverything();
-
-
-// (function() {
-//   function onButtonClick() {
-//     makeBackgroundBlue();
-//     printOutNumbers();
-//   }
-//
-//   function makeBackgroundBlue() {
-//     const el = document.querySelector('body');
-//
-//     el.style.backgroundColor = 'blue';
-//   }
-//
-//   function printOutNumbers() {
-//
-//     for(let i =0; i< 10; i++) {
-//       console.log(i);
-//     }
-//   }
-//
-//   document
-//     .querySelector('button')
-//     .addEventListener(
-//       "click", onButtonClick
-//     );
-// })()
+})();
